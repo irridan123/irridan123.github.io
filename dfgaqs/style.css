@@ -797,6 +797,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
       color: white;
       cursor: pointer;
+      border-radius: 20px;
   }
   .table_price a:hover {
     box-shadow: none;
