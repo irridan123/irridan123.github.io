@@ -8,7 +8,7 @@
 
 body {
     background-size: cover;
-    height: 3000px;
+    height: 2600px;
     background-color: #eaeaea;
 }
 
@@ -199,7 +199,7 @@ body {
 .bg-menu3:hover .btn-list3 {display: block;}
 
 .btn-list3{
-    left: 530px;
+    left: 560px;
     display: none;
     position: absolute;
     background-color: rgba(1,1,1,0);
@@ -358,6 +358,7 @@ body {
 
 .background{
     min-width: 640px;
+    max-width: 1903px;
     width: 100%;
     height: auto;
     position: relative;
@@ -381,6 +382,7 @@ body {
     position: absolute;
     top: 70px;
     z-index: 2;
+
 }
 .slide1 hr{
     position: relative;
@@ -391,11 +393,11 @@ body {
 .text1{
     font-size: 50px;
     color: white;
-    text-align: center;
+    left: 280px;
     position: absolute;
 
     top: 50px;
-    width: 1920px;
+    width: 100%;
     font-style:italic;
     font-weight: lighter;
 }
@@ -439,7 +441,7 @@ width: 400px;
     z-index: 4;
     position: absolute;
     text-align: center;
-    top: 1015px;
+    top: 1005px;
     width: 100%;
     font-style:italic;
     font-weight: lighter;
@@ -537,7 +539,7 @@ left: 0;
 
 .wrapper .content img{
     position: relative;
-    top: -20px;
+    top: -15px;
     border-radius: 20px;
 }
 
@@ -552,7 +554,7 @@ left: 0;
 
 .wrapper .content button{
     position: relative;
-    bottom: -20px;
+    bottom: -10px;
     border-radius: 20px;
     padding: 10px 25px;
     border: none;
@@ -565,8 +567,9 @@ left: 0;
 .background-body{
     position: relative;
     width: 100%;
-    bottom: -2000px;
+    bottom: -1100px;
     opacity: 0.2;
+    z-index: -20;
 }
 .news{
     position: relative;
@@ -680,6 +683,45 @@ left: 0;
     font-size: 30px;
 }
 
+.lorem80{
+position: relative;
+left: 650px;
+top: -350px;
+font-size: 25px;
+font-style:italic;
+font-weight: lighter;
+width: 500px;
+}
+.lorem90{
+    position: relative;
+    left: 650px;
+    top: -330px;
+    font-size: 22px;
+    font-style:italic;
+    font-weight: lighter;
+    width: 500px;
+}
+.dari123{
+position: relative;
+left: 30px;
+border-radius: 20px;
+width: 550px;
+top: 60px;
+}
+.data1{
+position: relative;
+left: 565px;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.data2{
+    position: absolute;
+    left: 2500px;
+    top: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
 .hr1{
     position: absolute;
@@ -694,9 +736,9 @@ left: 0;
 
 .hr2{
     position: absolute;
-    top: 25px;
+    top: 50px;
     width: 2px;
-    height: 500px;
+    height: 450px;
     left: 2520px;
     background-color: black;
     border: none;
@@ -705,13 +747,69 @@ left: 0;
 
 
 
+.table_price {
+    border-collapse: collapse;
+    border-left: 3px solid #1e9600;
+    border-right: 3px solid #1e9600;
+    border-bottom: 3px solid #1e9600;
+    font-family: "Lucida Grande", sans-serif;
+    position: absolute;
+    top: 2750px;
+    left: 440px;
+    z-index: 2;
+   }
+  .table_price caption {
+    background: #1e9600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
+    color: white;
+    font-family: "Roboto Slab",serif;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  .table_price tr td{
+      font-size: 27px;
 
+  }
+  .table_price td, .table_price th {
+    padding: 10px;
+      font-size: 20px;
+  }
+  .table_price th {
+    text-align: left;
+    font-size: 28px;
+  }
+  .table_price tr:nth-child(2n) {
+    background: #E5E5E5;
+  }
+  .table_price td:last-of-type {
+    text-align: center;
+  }
+  .table_price a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #1e9600;
+    box-shadow: 2px 2px 0 0 #55d71d;
+    position: relative;
+      color: white;
+      cursor: pointer;
+  }
+  .table_price a:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+  }
+  
 
 
 
 .podval{
 position: absolute;
-bottom: -3500px;
+bottom: -2750px;
 width: 100%;
 background-color: black;
 height: 500px;
