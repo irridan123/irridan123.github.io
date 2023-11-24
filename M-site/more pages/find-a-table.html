@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-FAT.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" hidden>
+<div class="nav">
+
+    <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+    <ul>
+        <li><a href="../index.html#about-us">О нас</a>
+        <li><a href="menu.html">Меню</a>
+        <li><a href="news.html">Новости</a>
+        <li><a href="find-a-table.html">Забронировать</a>
+        <li><a href="socials.html">Соц.сети</a>
+        <li><a href="#6">Контакты</a>
+        <li><a href="#7">Светлая тема</a>
+    </ul>
+</div>
+
+<div class="wrapper">
+    <section class="slide">
+    <div class="find-a-table">
+        <form action="">
+            <h1>БРОНИРОВАНИЕ СТОЛИКА</h1>
+            <div class="inputs">
+                <div class="first-col">
+                    <label for="fname" >Имя</label>
+                    <input type="text" name = fname placeholder = "Иван">
+                    <label for="sname">Фамилия</label>
+                    <input type="text" name = sname placeholder = "Иванов">
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" name = phone placeholder = "+7-___-___-__-__">
+                </div>
+                <div class="sec-col">
+                    <label for="date">Дата</label>
+                    <input type="date" name = date>
+                    <label for="time">Время</label>
+                    <input type="time" name = time>
+                    <label for="gvalue">Количество гостей</label>
+                    <input type="text" name = gvalue placeholder="10">
+                </div>
+            </div>
+            <div class="comment">
+                <label for="comment" id = comment>Комментарий</label>
+                <textarea name="comment"></textarea>
+            </div>
+            <div class="buttons">
+                    <input type="button" id = "fbutton" onclick="history.back();" value="На главную"/>
+                    <input type="button" id = sbutton value="Забронировать" onClick='location.href="FAT-page.html"'>
+            </div>
+        </form>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-body">
+            <div class="about-company">
+                <b>Рататуй</b>
+                <span class="footer-info">
+                            <span>Еmail: <a style="color: white" href="#">ratatuiCafe@outlook.com</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span>Телефон: <a style="color: white" href="#">8-700-123-4567</a></span>
+                        </span>
+                <span class="footer-title">©Ratatui.com 2006—2023 гг. Все права защищены.</span>
+                <span class="footer-subtitle"> Использование контента Ratatui.com разрешено только с предварительного согласия администрации сайта или правообладателей.</span>
+            </div>
+            <div class="contact-icons">
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-vk"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: Montserrat, Arial,sans-serif;
+    }
+    img{
+        margin-top:3%;
+    }
+    h1{
+        font-size: 2.8vw;
+        margin: 1vw 0 2.2vw 0;
+    }
+    input[type=button]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 54.2%;
+        height: 4.8vw;
+        margin: 0 0 1vw 0;
+        font-size: 2vw;
+        font-weight: bold;
+        border-radius: 1vw;
+        z-index: 123;
+        border: .2vw solid white;
+    }
+    #more-table{
+        background: none;
+        color: white;
+    }
+    #more-table{
+        background: none;
+
+    }
+    @media screen and (max-width:430px){
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            margin-top: 20vw;
+            width: 90%;
+        }
+        h1{
+            font-size: 5vw;
+        }
+        input[type=button]{
+            margin-top:5vw;
+            border-radius: 2vw;
+            font-size: 4vw;
+            width: 93%;
+            height: 15vw;
+        }
+    }
+    @media screen  and (max-width:768px) and (min-width:431px){
+        h1{
+            font-size: 4vw;
+        }
+        input[type=button]{
+            width: 78%;
+            height: 10vw;
+            font-size: 3.5vw;
+        }
+    }
+</style>
+<body>  
+    <img src="FAT-img/happyface.png" alt="">
+    <h1>Вы успешно забронировали столик!</h1>
+    <input type="button" onclick="history.back();" value = "Назад"/>
+</body>
+</html>
