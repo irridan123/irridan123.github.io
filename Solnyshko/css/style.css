@@ -1,0 +1,1958 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  background-color: #F0F4F4;
+}
+  footer, main, nav, .nav-bar,  section {
+  display: block;
+}
+
+@media screen and (min-width: 1920px){
+  .wrapper{
+    position: relative;
+    width: 1920px;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 1920px;
+    height: 830px;
+  }
+  #about{
+    background-image: url(../img/background1-1.png);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  #training{
+    background-image: url(../img/background2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: url(../img/background3-1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 1520px;
+    margin: 0 auto;
+  }
+  nav{
+    width: 1920px;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay{
+    display: none;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 45px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .nav-bar-a > a {
+    margin-left: 35px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+  }
+  #about .container{
+    margin-top: 140px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  #about .container > p{
+    margin-top: 30px;
+    font-size: 29px;
+    color: #319FB7;
+    width: 60%;
+  }
+  .about-bt{
+    margin-top: 30px;
+  }
+  .about-bt-second{
+    margin-left: 40px;
+  }
+  .about-info{
+    margin-top: 170px;
+    text-align: center;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 34px;
+  }
+  .about-info-text{
+    margin-top: 40px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 900;
+    font-size: 36px;
+    width: 460px;
+  }
+  #training > .container > h2{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  #training > .container > p{
+    font-size: 20px;
+  }
+  .training-group{
+    width: 690px;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+  .training-group > p{
+    font-size: 24px;
+    width: 690px;
+    height: 100px;
+  }
+  .training-group > h3{
+    font-size: 38px;
+  }
+  .training-bt{
+    width: 225px;
+    font-size: 24px;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 28px;
+    padding: 8px 30px;
+    line-height: 24px;
+  }
+  #exercise > .container > h2{
+    margin-top: 128px;
+    margin-left: 56px;
+    font-size: 48px;
+  }
+  #exercise > .container > p{
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  #exercise > .container > div{
+    width: 445px;
+    font-size: 28px;
+    font-weight: 900;
+    margin-left: 56px;
+    margin-top: 70px;
+  }
+  .footer-text{
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer-text-t{
+    margin-right: 100px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 34px;
+  }
+  .footer-text-t > p{
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 42px;
+    top: 6px;
+  }
+  .footer-text-contact > a,b,p{
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .email{
+    margin-top: 8px;
+  }
+  .footer-info > b{
+    position: relative;
+    top: 5px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .sponsors > a{
+    width: 310px;
+  }
+  .sponsors > hr{
+    height: 28px;
+  }
+  .sponsors> a:nth-child(3){
+    padding-left: 80px;
+  }
+  .footer-info > p{
+    font-size: 18px;
+    font-weight: 200;
+  }
+}
+/*Мониторы*/
+@media screen and (min-width: 1440px) and (max-width: 1919px){
+  .wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  #about{
+    background-image: url(../img/background1-1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  #about .container{
+    margin-top: 140px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  #about .container > p{
+    margin-top: 30px;
+    font-size: 24px;
+    color: #319FB7;
+    width: 60%;
+  }
+  .about-bt-second{
+    margin-left: 40px;
+  }
+  #training{
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: url(../img/background3-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  nav{
+    width: 100%;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay{
+    display: none;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .logo-text > img{
+    width: 46px;
+  }
+  .nav-bar-a > a {
+    margin-left: 35px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+  }
+  .about-info{
+    margin-top: 11em;
+    text-align: center;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 34px;
+  }
+  .about-info-text{
+    margin-top: 40px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 900;
+    font-size: 36px;
+    width: 460px;
+  }
+  #training > .container > h2{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  #training > .container > p{
+    font-size: 20px;
+  }
+  .training-group{
+    width: 36vw;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+  .training-group > p{
+    font-size: 1.3vw;
+    width: 35vw;
+    height: 100px;
+  }
+  .training-group > h3{
+    font-size: 2vw;
+  }
+  .training-group > h3 > img{
+    width: 3vw;
+  }
+  .training-bt{
+    width: 225px;
+    font-size: 24px;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 28px;
+    padding: 8px 30px;
+    line-height: 24px;
+    margin-top: 1.5em
+  }
+  #exercise > .container > h2{
+    margin-top: 64px;
+    margin-left: 56px;
+    font-size: 38px;
+  }
+  #exercise > .container > p{
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  #exercise > .container > div{
+    width: 445px;
+    font-size: 28px;
+    font-weight: 900;
+    margin-left: 56px;
+    margin-top: 50px;
+  }
+  .footer-text{
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer-text-t{
+    margin-right: 100px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .footer-text-t > p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    top: 6px;
+  }
+  .footer-text-contact > a,b,p{
+    font-size: 20px;
+  }
+  .footer-info > b{
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+  .sponsors > a{
+    width: 310px;
+  }
+  .sponsors > a > img{
+    height: 24px;
+  }
+  .sponsors > hr{
+    height: 24px;
+  }
+  .sponsors> a:nth-child(3){
+    padding-left: 80px;
+  }
+  .footer-info > p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 0;
+  }
+}
+/*L Ноутбуки*/
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+  .wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  #about{
+    background-image: url(../img/background1-2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  #about .container{
+    margin-top: 60px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 38px;
+  }
+  #about .container > p{
+    margin-top: 30px;
+    font-size: 24px;
+    color: #319FB7;
+    width: 700px;
+  }
+  .about-bt-second{
+    margin-left: 40px;
+  }
+  #training{
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: url(../img/background3-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  nav{
+    width: 100%;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay{
+    display: none;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .logo-text > img{
+    width: 2.8vw;
+  }
+  .nav-bar-a > a {
+    margin-left: 14px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    font-size: 1.5vw;
+  }
+  .about-info{
+    margin-top: 142px;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .about-info-text{
+    margin-top: 20px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 1.5vw;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2vw;
+    width: 28vw;
+  }
+  #training > .container > h2{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  #training > .container > p{
+    font-size: 20px;
+  }
+  .training-group{
+    width: 38vw;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+  .training-group > p{
+    font-size: 1.4vw;
+    width: 36vw;
+    height: 100px;
+  }
+  .training-group > h3{
+    font-size: 2.4vw;
+  }
+  .training-group > h3 > img{
+    width: 3.4vw;
+  }
+  .training-bt{
+    width: 225px;
+    font-size: 24px;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 28px;
+    padding: 8px 30px;
+    line-height: 24px;
+    margin-top: 40px;
+  }
+  #exercise > .container > h2{
+    margin-top: 38px;
+    margin-left: 56px;
+    font-size: 28px;
+  }
+  #exercise > .container > p{
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  #exercise > .container > img{
+    width: 34px;
+  }
+  #exercise > .container > div{
+    width: 320px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-left: 56px;
+  }
+  section:nth-child(3){
+    padding-bottom: 40px;
+  }
+  .footer-text{
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer-text-t{
+    margin-right: 100px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .footer-text-t > p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    top: 6px;
+  }
+  .footer-text-contact > a,b,p{
+    font-size: 20px;
+  }
+  .footer-info > b{
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .sponsors > a{
+    width: 420px;
+  }
+  .sponsors > a > img{
+    height: 24px;
+  }
+  .sponsors > hr{
+    height: 20px;
+  }
+  .sponsors> a:nth-child(3){
+    padding-left: 80px;
+  }
+  .footer-info > p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 0;
+  }
+}
+/*Ноутбук*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  #about{
+    background-image: url(../img/background1-3.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  #about .container{
+    margin-top: 140px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  #about .container > p{
+    margin-top: 18px;
+    font-size: 19px;
+    color: #319FB7;
+    width: 68%;
+  }
+  .about-bt{
+    flex-direction: column;
+    width: 50%;
+    margin-top: 40px;
+  }
+  .about-bt-second{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #training{
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: url(../img/background3-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  nav{
+    width: 100%;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление в столбец */
+    align-items: center; /* Выравниваем элементы по центру */
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay-content a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #818181;
+    font-size: 4vw;
+    padding-bottom: 5px;
+  }
+
+  .overlay-content a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Перемещаем в центр */
+    transform: translateX(-50%); /* Центрируем относительно текста */
+    width: 0;
+    height: 2px;
+    background-color: #FFD600;
+    transition: width 0.3s ease;
+  }
+
+  .overlay-content a:hover::after {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: relative;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .logo-text > img{
+    width: 2.8vw;
+  }
+  .nav-bar-a > a {
+    margin-left: 14px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    font-size: 1.5vw;
+    display: none;
+  }
+  .about-info{
+    margin-top: 200px;
+    text-align: center;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 2.3vw;
+  }
+  .about-info-text{
+    margin-top: 28px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 1.8vw;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2vw;
+    width: 28vw;
+  }
+  #training > .container > h2{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  #training > .container > p{
+    font-size: 20px;
+  }
+  .training-group{
+    width: 37vw;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+  .training-group > p{
+    font-size: 14px;
+    width: 36vw;
+    height: 100px;
+  }
+  .training-group > h3{
+    font-size: 2.4vw;
+  }
+  .training-group > h3 > img{
+    width: 3.4vw;
+  }
+  .training-bt{
+    width: 225px;
+    font-size: 24px;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 22px;
+    padding: 8px 30px;
+    line-height: 24px;
+  }
+  #exercise > .container > h2{
+    margin-top: 38px;
+    margin-left: 51px;
+    font-size: 28px;
+  }
+  #exercise > .container > p{
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  #exercise > .container > img{
+    width: 34px;
+  }
+  #exercise > .container > div{
+    width: 320px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-left: 51px;
+  }
+  section:nth-child(3){
+    padding-bottom: 40px;
+  }
+  .footer-text{
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  .footer-text-t{
+    margin-right: 20px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer-text-t > p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    top: 6px;
+  }
+  .footer-text-contact > a,b,p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-info > b{
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .sponsors > a{
+    width: 420px;
+  }
+  .sponsors > a > img{
+    height: 21px;
+  }
+  .sponsors > hr{
+    height: 18px;
+  }
+  .sponsors> a:nth-child(3){
+    padding-left: 80px;
+  }
+  .footer-info > p{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 10px;
+    margin-top: 0;
+  }
+}
+/*Планшет*/
+@media screen and (min-width: 425px) and (max-width: 767px){
+  .wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  #about{
+    background-image: url(../img/background1-4.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 502px;
+    right: 0;
+  }
+  #training{
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: url(../img/background3-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  nav{
+    width: 100%;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление в столбец */
+    align-items: center; /* Выравниваем элементы по центру */
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay-content a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #818181;
+    font-size: 36px;
+    padding-bottom: 5px;
+  }
+
+  .overlay-content a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Перемещаем в центр */
+    transform: translateX(-50%); /* Центрируем относительно текста */
+    width: 0;
+    height: 2px;
+    background-color: #FFD600;
+    transition: width 0.3s ease;
+  }
+
+  .overlay-content a:hover::after {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: relative;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  footer > .container > .logo-text{
+    margin-left: 0;
+    font-size: 3vw;
+  }
+  .logo-text > img{
+    width: 2.8vw;
+  }
+  .nav-bar-a > a {
+    margin-left: 14px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    font-size: 1.5vw;
+    display: none;
+  }
+  .about-info{
+    text-align: center;
+    position: absolute;
+    top: 435px;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 2.4vw;
+  }
+  .about-info-text{
+    margin-top: 8px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 1.8vw;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.3vw;
+    width: 30vw;
+  }
+  #training > .container > h2{
+    font-size: 5vw;
+    margin-top: 10px;
+  }
+  #training > .container > p{
+    font-size: 3vw;
+  }
+  .training-group{
+    width: 42vw;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .training-group > p{
+    font-size: 14px;
+    width: 40vw;
+    height: auto;
+  }
+  .training-group > h3{
+    font-size: 2.8vw;
+  }
+  .training-group > h3 > img{
+    width: 3.9vw;
+  }
+  .training-bt{
+    width: 150px;
+    font-size: 18px;
+  }
+  #about .container{
+    margin-top: 60px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  #about .container > p{
+    margin-top: 18px;
+    font-size: 19px;
+    color: #319FB7;
+    width: 70%;
+    line-height: 20px;
+  }
+  .about-bt{
+    flex-direction: column;
+    width: 60%;
+    margin-top: 20px;
+  }
+  .about-bt-second{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 3vw;
+    padding: 0.2vw;
+    line-height: 3vw;
+  }
+  #exercise > .container > h2{
+    margin-top: 38px;
+    margin-left: 56px;
+    font-size: 28px;
+  }
+  #exercise > .container > p{
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  #exercise > .container > img{
+    width: 34px;
+  }
+  #exercise > .container > div{
+    width: 320px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-left: 56px;
+  }
+  section:nth-child(3){
+    padding-bottom: 40px;
+  }
+  .footer-text{
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  .footer-text-t{
+    margin-right: 20px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-text-t > p{
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .footer-text-contact > a,.footer-text-contact > b, .footer-text-contact > p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer-info > b{
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .sponsors > a{
+    width: 212px;
+  }
+  .sponsors > a > img{
+    height: 21px;
+  }
+  .sponsors > hr{
+    height: 18px;
+  }
+  .sponsors> a:nth-child(3){
+  }
+  .footer-info > p{
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 10px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 729px){
+  #about{
+    background-image: url("../img/background1-4n.png");
+  }
+  .about-info{
+    top: 440px;
+  }
+  #exercise{
+    background-image: none;
+    background-color: #B7F2FF;
+  }
+}
+@media screen and (max-width: 424px){
+  .wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  #about{
+    background-image: url(../img/background1-4.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 502px;
+    right: 0;
+  }
+  #training{
+    position: relative;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  #exercise{
+    background-image: none;
+    background-color: #B7F2FF;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: #00424B;
+    position: relative;
+    right: 0;
+  }
+  .footer-info{
+    width: 100%;
+    height: auto;
+    background-color: #002327;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  nav{
+    width: 100%;
+    z-index: 110;
+    position: fixed;
+    background-color: white;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление в столбец */
+    align-items: center; /* Выравниваем элементы по центру */
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay-content a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #818181;
+    font-size: 36px;
+    padding-bottom: 5px;
+  }
+
+  .overlay-content a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Перемещаем в центр */
+    transform: translateX(-50%); /* Центрируем относительно текста */
+    width: 0;
+    height: 2px;
+    background-color: #FFD600;
+    transition: width 0.3s ease;
+  }
+
+  .overlay-content a:hover::after {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .nav-bar{
+    margin: auto;
+    width: 100%;
+    height: 20px;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .nav-bar > span{
+    position: relative;
+    cursor: pointer;
+  }
+  .logo-text{
+    color: #FFD600;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  footer > .container > .logo-text{
+    margin-left: 0;
+    font-size: 3vw;
+  }
+  .logo-text > img{
+    width: 2.8vw;
+  }
+  .nav-bar-a > a {
+    margin-left: 14px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    font-size: 1.5vw;
+    display: none;
+  }
+  .about-info{
+    text-align: center;
+    position: absolute;
+    top: 445px;
+  }
+  .about-info h1{
+    color: white;
+    font-size: 2.8vw;
+  }
+  .about-info-text{
+    margin-top: 8px;
+  }
+  .about-info-text-t{
+    font-weight: 200;
+    color: white;
+    font-size: 2.3vw;
+  }
+  .about-info-text-t > p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.413vw;
+    width: 30vw;
+    line-height: 11px;
+  }
+  #training > .container > h2{
+    font-size: 5vw;
+    margin-top: 10px;
+  }
+  #training > .container > p{
+    font-size: 3vw;
+  }
+  .training-group{
+    width: 95vw;
+    margin-top: 10px;
+  }
+  .training-group > p{
+    font-size: 16px;
+    width: 82vw;
+    height: 120px;
+  }
+  .training-group > h3{
+    font-size: 6vw;
+  }
+  .training-group > h3 > img{
+    width: 9vw;
+  }
+  .training-bt{
+    width: 130px;
+    font-size: 16px;
+  }
+  #about .container{
+    margin-top: 30px;
+  }
+  #about > .container > h1, i{
+    color: #37B9D6;
+    font-weight: 600;
+    font-size: 6vw;
+  }
+  #about .container > p{
+    margin-top: 18px;
+    font-size: 19px;
+    color: #319FB7;
+    width: 72%;
+    line-height: 20px;
+  }
+  .about-bt{
+    flex-direction: column;
+    width: 70%;
+    margin-top: 20px;
+  }
+  .about-bt-second{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .about-bt-first, .about-bt-second{
+    font-size: 4vw;
+    padding: 0.3vw;
+    line-height: 4vw;
+  }
+  #exercise > .container > h2{
+    margin-top: 16px;
+    margin-left: 35px;
+    font-size: 19px;
+  }
+  #exercise > .container > p{
+    font-weight: 600;
+    margin-top: 22px;
+    font-size: 3.7vw;
+  }
+  #exercise > .container > img{
+    width: 25px;
+  }
+  #exercise > .container > div{
+    width: 170px;
+    font-size: 11px;
+    font-weight: 900;
+    margin-top: 22px;
+    margin-left: 35px;
+  }
+  section:nth-child(3){
+    padding-bottom: 40px;
+  }
+  .footer-text{
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  .footer-text-t{
+    margin-right: 16px;
+  }
+  .footer-text-t >h3,.footer-text-contact > h3{
+    font-weight: 900;
+    font-size: 2.2vw;
+    line-height: 8px;
+  }
+  .footer-text-t > p{
+    font-size: 2.4vw;
+    position: relative;
+    top: 2px;
+  }
+  .footer-text-contact > a,.footer-text-contact > b, .footer-text-contact > p{
+    font-size: 2.4vw;
+    line-height: 17px;
+    position: relative;
+    top: 5px;
+  }
+  .social-media-img > a, .social-media-img > a > img{
+    width: 16px;
+  }
+  .footer-info > b{
+    position: relative;
+    font-size: 10px;
+  }
+  .sponsors{
+    display: flex;
+    justify-content: center;
+  }
+  .sponsors > a{
+    width: 154px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .sponsors > a > img{
+    height: 12px;
+  }
+  .sponsors > hr{
+    height: 10px;
+  }
+  .sponsors> a:nth-child(3){
+  }
+  .footer-info > p{
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 10px;
+    margin-top: 0;
+  }
+}
+.nav-bar-a > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #00D1FF;
+  bottom: -3px;
+  left: 50%; /* Располагаем подчеркивание по центру */
+  transition: width 0.3s ease; /* Добавляем плавный переход для анимации */
+  transform: translateX(-50%); /* Сдвигаем на половину ширины элемента */
+}
+.nav-bar-a > a:hover::after {
+  width: 100%; /* При наведении увеличиваем ширину подчеркивания до 100% */
+}
+.Auth{
+  margin-left: auto;
+}
+.Auth > a{
+  color: #00D1FF;
+  margin-left: 18px;
+  position: relative; /* Добавляем относительное позиционирование для .nav-bar-a > a */
+}
+.Auth > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  bottom: -3px;
+  left: 50%; /* Располагаем подчеркивание по центру */
+  transition: width 0.3s ease; /* Добавляем плавный переход для анимации */
+  transform: translateX(-50%); /* Сдвигаем на половину ширины элемента */
+}
+.Auth > a:hover::after {
+  width: 100%; /* При наведении увеличиваем ширину подчеркивания до 100% */
+}
+#about .container h1{
+  font-weight: 900;
+}
+.about-bt{
+  display: flex;
+  text-align: center;
+}
+.about-bt-first, .about-bt-second{
+  background-color: #37B9D6;
+  border-radius: 200px;
+  border: solid 4px #37B9D6;
+  color: white;
+}
+.about-bt-second{
+  background-color: #B7F2FF;
+  border: solid 4px white;
+  color: #37B9D6;
+}
+.about-bt-first:hover{
+  background: none;
+  border: solid 4px white;
+  color: #37B9D6;
+  transition: .3s;
+}
+.about-bt-second:hover{
+  background: #37B9D6;
+  border: solid 4px #37B9D6;
+  color: #fff;
+  transition: .3s;
+}
+.about-info-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#training > .container > h2{
+  color: #37B9D6;
+}
+#training > .container > p{
+  font-weight: 300;
+  color: black;
+}
+.training{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.training-group{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #00ADD3;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+.training-group:nth-child(even){
+  margin-right: 0;
+}
+.training-group:hover{
+  transition: .5s;
+  transform: scale(1.05);
+}
+.training-group > h3{
+  color: #37B9D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.training-group > h3 >img{
+  margin-right: 10px;
+}
+.training-group > p{
+  margin-top: 10px;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+}
+.training-bt{
+  margin-top: 20px;
+  background-color: #67BED1;
+  border-radius: 50px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+.training-bt:hover{
+  transform: scale(1.05);
+  transition: .4s;
+}
+#exercise > .container > h2{
+  color: #37B9D6;
+  font-weight: 900;
+}
+#exercise > .container > p {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+#exercise > .container > p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #37B9D6;
+  transition: width 0.3s ease;
+}
+
+#exercise > .container > p:hover::after {
+  width: 100%;
+}
+
+#exercise > .container > img{
+  margin-right: 16px;
+  position: relative;
+  top: 5px;
+}
+#exercise > .container > div {
+  background-color: #5BE2FF;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: -5px 4px 4px 0 rgba(0, 0, 0, 25%);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  padding: 4px;
+}
+
+#exercise > .container > div:hover {
+  background-color: #46c7ff;
+  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+footer > .container > a{
+  padding-top: 20px;
+}
+.footer-text{
+  display: flex;
+}
+.footer-text-t{
+  color: #fff;
+}
+.footer-text-t p {
+  display: inline;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-text-t p:hover {
+  color: #ffcc00;
+}
+
+.footer-text-t p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.footer-text-t p:hover::after {
+  border-bottom-color: #ffcc00;
+}
+
+.footer-text-contact{
+  margin-left: auto;
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 425px){
+  .social-media-img{
+    display: flex;
+    margin-top: 6px;
+  }
+  .social-media-img > a{
+    width: 32px;
+    margin-right: 10px;
+  }
+  .social-media-img > a > img{
+    width: 32px;
+  }
+}
+
+
